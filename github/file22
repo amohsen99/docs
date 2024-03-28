@@ -1,0 +1,3 @@
+#to clone specific branch
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 17.0 --single-branch .
+
