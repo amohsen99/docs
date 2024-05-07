@@ -1,0 +1,27 @@
+we can use python and js and xml 
+
+ by qweb wen can built report and web pages
+ in qweb we can use python or js 
+  1-by python 
+  
+  i-we  define xml template 
+  <odoo>
+  <template id="x_template" name="">
+	<h1> <h1>  
+  </template>
+	</odoo>
+	
+2- we define python file and create controller in it 
+3-in python template u can writ html code 
+hint< --dev=xml> u won't neet to upgrade module when restart app
+ثث
+
+
+
+in qweb we use mvc pattern
+ 
+2 in js 
+1-we use xml file and use t-call
+
+
+
