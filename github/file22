@@ -1,11 +1,2 @@
-#to clone specific branch
-git clone https://www.github.com/odoo/odoo --depth 1 --branch 17.0 --single-branch .
-
-add branch and switch to it 
-git chouckout -b <branchName>
-
-
- Delete a local branch: git branch -d/-D <branchName> (the -D option is for force deletion)
- Delete a remote branch: git push origin -d <branchName> or git push origin :<branchName>
 
 

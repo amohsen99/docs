@@ -1,0 +1,17 @@
+steps
+1-search for 
+<div class="oe_buttonbox" 
+
+2-putt it under for >> sheet >> first line
+3-give to it class oe_stat_butoon
+3-in button name give to it action id 
+4-make field
+xxx_count=fields.Integer('name',compute='_compute_xxx_count')
+5- create function  _compute_xxx_count
+def _compute_xxx_count(self)
+	for rec in self:
+		xxx_count=self.env['model.name'].search_count([('patient.id','=',rec.id)])
+
+add xxx_count field to button
+quality_control.menu_quality_root
+
