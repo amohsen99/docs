@@ -3,8 +3,12 @@
 
 
 
-##### -f 
+##### p >>   print the lines which changed  like sed 's/dolfined/DolfinED/g' file.txt
+##### n >> print the lines which changed  like sed -n 's/dolfined/DolfinED/p' file.txt
+##### d >> delete lines  like sed '3,4 d' file.txt >> delete lines 3 to 4 or sed '2,$ d' file.txt >> delete lines 2 to end
+##### e >> excute multiple comands like sed -e 's/dolfined/DolfinED/g' -e 's/center/website/g' file.txt
 
+##### -f  >> mean  read commands from file
 ubuntu@DolfinED:~$ vim sed.txt
 ---
 s/dolfined/DolfinED/g
@@ -13,4 +17,21 @@ s/center/website/g
 ---
 
 ubuntu@DolfinED:~$ sed -f sed.txt file.txt
+
+
+
+##### -i >> make changes in file
+vim sed.txt
+ubuntu@DolfinED:~$ sed -i  sed.txt  #### -i >> make changes in file
+ubuntu@DolfinED:~$ sed 's/dolfined/DolfinED/g' sed.txt > sed1.txt #### -i >> make changes and save in new file
+
+
+
+
+
+
+### p operator
+ubuntu@DolfinED:~$ sed -f sed.txt file.txt
+DolfinED
+website
 

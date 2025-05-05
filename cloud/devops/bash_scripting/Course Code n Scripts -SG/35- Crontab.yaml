@@ -1,6 +1,12 @@
 
 
 
+# whats crontab and how to use it?
+ # crontab is a command used to schedule jobs to run at specific times or intervals.
+
+ #how to use crontab?
+  
+
 
 # reset the app choice for the crontab -e
 ubuntu@DolfinED:~$ rm ~/.selected_editor

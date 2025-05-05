@@ -1,42 +1,98 @@
 
+# Bash Conditional Operators Reference
+# Note: Space is important in bash conditionals
 
-# Space is important
+#########################################################
+# Comparison Operators for Numerical Values
+#########################################################
 
+# Numerical comparison operators:
+# -eq : Equal to
+# -ne : Not equal to
+# -gt : Greater than
+# -lt : Less than
+# -ge : Greater than or equal to
+# -le : Less than or equal to
 
-######### Comparison Operators for Numerical Values #######
+# Note: [[]] has more features and is smart enough to use variables without $ sign
 
+# Example 1: Basic equality check
 ubuntu@DolfinED:~$ [ 10 -eq 10 ] ; echo $?
+# Output: 0 (true)
 
-ubuntu@DolfinED:~$ [[ a -eq b ]] ; echo $?
+# Example 2: Variable comparison
+ubuntu@DolfinED:~$ a=10
+ubuntu@DolfinED:~$ b=20
+ubuntu@DolfinED:~$ [ $a -eq $b ] ; echo $?
+# Output: 1 (false)
 
-ubuntu@DolfinED:~$ [ $string1 != $string2  ] ; echo $?
+# Example 3: Using double brackets
+ubuntu@DolfinED:~$ [[ $a -eq $b ]] ; echo $?
+# Output: 1 (false)
 
+#########################################################
+# Comparison Operators for Strings
+#########################################################
 
-ubuntu@DolfinED:~$ [ -z $string1 ] ; echo $?
+# String comparison operators:
+# =  : Equal to
+# != : Not equal to
+# >  : Greater than (alphabetically)
+# <  : Less than (alphabetically)
+# -z : Check if string is empty
+# -n : Check if string is not empty
 
+# Example 1: String comparison
+ubuntu@DolfinED:~$ string1="DolfinED"
+ubuntu@DolfinED:~$ string2="dolfinED"
+ubuntu@DolfinED:~$ [ "$string1" != "$string2" ] ; echo $?
+# Output: 0 (true)
 
-####### File Operators #######
+# Example 2: Check if string is empty
+ubuntu@DolfinED:~$ [ -z "$string1" ] ; echo $?
+# Output: 1 (false - string is not empty)
 
+#########################################################
+# File Operators
+#########################################################
+
+# File test operators:
+# -e : Check if file exists
+# -f : Check if path is a regular file
+# -d : Check if path is a directory
+# -r : Check if file is readable
+# -w : Check if file is writable
+# -x : Check if file is executable
+
+# Example 1: Check if file exists
 ubuntu@DolfinED:~$ [ -e sc1.sh ] ; echo $?
+# Output depends on whether sc1.sh exists
 
-
+# Example 2: Check if directory exists
 ubuntu@DolfinED:~$ [ -d dolfined ] ; echo $?
+# Output depends on whether dolfined directory exists
 
-
+# Example 3: Check if file is executable
 ubuntu@DolfinED:~$ [ -x sc5.sh ] ; echo $?
+# Output depends on whether sc5.sh is executable
 
+#########################################################
+# Logical Operators
+#########################################################
 
-========================================================
+# Logical operators:
+# &&  : AND - both conditions must be true
+# ||  : OR - at least one condition must be true
+# !   : NOT - negates the condition
 
-####### Logical Operators #########
-
+# Example 1: AND operator
 ubuntu@DolfinED:~$ [ $a -gt $b ] && [ $a -ne $b ] ; echo $?
+# Output: 1 (false - first condition is false)
 
-
+# Example 2: OR operator
 ubuntu@DolfinED:~$ [ $a -eq $b ] || [ $a -ne $b ] ; echo $?
+# Output: 0 (true - second condition is true)
 
-
+# Example 3: NOT operator
 ubuntu@DolfinED:~$ ! [ $a -gt $b ] ; echo $?
-
-
-
+# Output: 0 (true - negation of false is true)

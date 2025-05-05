@@ -3,7 +3,33 @@
 ################################################
 ############ AWK Variables – Part 1 ############
 ################################################
+# In AWK, we can define variables
+# $0 is the entire line
+# $1 is the first element (Name)
+# $2 is the second element (DEP)
+# $3 is the third element (Salary)
 
+# Instead of writing long code like this:
+# ubuntu@DolfinED:~$ awk '{print $1, $2, $3}' file1.txt
+
+# We can define variables to make the code more readable
+# ubuntu@DolfinED:~$ awk 'BEGIN {name=$1; dep=$2; salary=$3} {print name, dep, salary}' file1.txt
+
+# NR >> Number of Records
+# NF >> Number of Fields
+
+FS >> Field Seperator mean >> 
+OFS >> Output Field Seperator
+RS >> Record Seperator
+FS >> Field Separator, used to define the delimiter for fields in a record 
+OFS >> Output Field Separator, used to define the delimiter for fields when outputting
+RS >> Record Separator, used to define the delimiter for records in input
+ORS >> Output Record Separator, used to define the delimiter for records when outputting
+# For example, if we want to split the fields by comma instead of space:
+# ubuntu@DolfinED:~$ awk 'BEGIN {FS=","} {print $1, $2, $3}' file1.csv
+
+# Or, if we want to split the records by two newline characters:
+# ubuntu@DolfinED:~$ awk 'BEGIN {RS="\n\n"} {print $0}' file1.txt
 
 ubuntu@DolfinED:~$ vim file1.txt
 ---
@@ -18,6 +44,106 @@ Sara     sales     13000
 satvik   HR        80000
 ---
 
+# To print the current record number (NR) for each line in the file:
+ubuntu@DolfinED:~$ awk ' BEGIN{print "Record Number, Line"} {print NR} END{print "End of File"} ' file1.txt
+#output
+Record Number, Line
+1
+2
+3
+4
+5
+6
+7
+8
+End of File
+#
+# To print the current field number (NF) for each line in the file:
+ubuntu@DolfinED:~$ awk ' BEGIN{print "Number of Fields"} {print NF} END{print "End of File"} ' file1.txt
+#output
+Number of Fields
+3
+3
+3
+3
+3
+3
+3
+3
+End of File
+
+
+# To print the current record ($0) for each line in the file:
+ubuntu@DolfinED:~$ awk ' {print $0} ' file1.txt
+output
+Name      DEP     Salary
+Nader    account   45000
+Sara     account   25000
+Mena     sales     50000
+Ali      account   47000
+Ahmed    sales     15000
+deepak   sales     23000
+Sara     sales     13000    
+satvik   HR        80000
+
+#_________________________________________
+# To print the first field ($1) and the third field ($3) for each line in the file:
+ubuntu@DolfinED:~$ awk ' {print $1"   "$3} ' file1.txt
+output
+Name      Salary
+Nader     45000 
+Sara      25000 
+Mena      50000....
+
+#__________________________________________________________
+# To print the first field ($1) and the third field ($3) for each line in the file, using OFS:
+ubuntu@DolfinED:~$ awk 'BEGIN {OFS="   "} {print $1, $3}' file1.txt
+output
+Name   Salary
+Nader   45000
+Sara   25000
+Mena   50000
+Ali   47000
+Ahmed   15000
+deepak   23000
+Sara   13000
+satvik   80000
+
+# Example using FS with /etc/passwd
+ubuntu@DolfinED:~$ awk -F: '{print $1, $3, $6}' /etc/passwd
+# This will print the username, user ID, and home directory from /etc/passwd
+# Output will look like:
+# root 0 /root
+# daemon 1 /usr/sbin
+# bin 2 /bin
+# ...
+
+
+# Example using FS with /etc/passwd
+ubuntu@DolfinED:~$ awk -F: '{print $1, $3, $6}' /etc/passwd
+# This will print the username, user ID, and home directory from /etc/passwd
+# Output will look like:
+# root 0 /root
+# daemon 1 /usr/sbin
+# bin 2 /bin
+# ...
+
+# Another example using FS with a custom file
+ubuntu@DolfinED:~$ cat > users.txt << EOF
+john:doe:35:developer
+jane:smith:28:designer
+mike:johnson:42:manager
+EOF
+
+ubuntu@DolfinED:~$ awk -F: '{print "Name: " $1 " " $2 ", Age: " $3 ", Job: " $4}' users.txt
+# Output:
+# Name: john doe, Age: 35, Job: developer
+# Name: jane smith, Age: 28, Job: designer
+# Name: mike johnson, Age: 42, Job: manager
+
+
+
+
 
 
 ################################################
@@ -26,6 +152,26 @@ satvik   HR        80000
 
 
 ######### RS, ORS #########
+Rs >> Record Seperator  like \n
+ORS >> Output Record Seperator  like to replace  \n with ---- 
+ubuntu@DolfinED:~$ awk 'BEGIN {RS="\n\n"} {print "Record:", NR, $0}' multiline.txt
+# Output:
+# Record: 1 Record 1, Line 1 Record 1, Line 2
+# Record: 2 Record 2, Line 1 Record 2, Line 2
+# Record: 3 Record 3, Line 1 Record 3, Line 2
+
+# Example using ORS to format output
+ubuntu@DolfinED:~$ awk 'BEGIN {ORS="\n---\n"} {print $0}' multiline.txt
+# Output:
+# Record 1, Line 1
+# Record 1, Line 2
+# ---
+# Record 2, Line 1
+# Record 2, Line 2
+# ---
+# Record 3, Line 1
+# Record 3, Line 2
+# ---
 
 
 ubuntu@DolfinED:~$ tail -n 5 /etc/passwd > file2.txt

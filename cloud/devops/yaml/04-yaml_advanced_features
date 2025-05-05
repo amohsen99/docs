@@ -1,0 +1,111 @@
+Multi-line strings in YAML:
+
+1. Folded style (>):
+   Used to preserve newlines as spaces.
+
+   example: >
+     This is a long text
+     that spans multiple lines.
+     It will be folded into a single line.
+
+2. Literal style (|):
+   Used to preserve newlines as-is.
+
+   example: |
+     This is a long text
+     that spans multiple lines.
+     It will preserve all line breaks.
+
+Both styles can be combined with additional indicators:
+- Strip (-): Removes all trailing newlines
+- Keep (+): Keeps all trailing newlines
+- Clip (no indicator): Keeps one trailing newline
+
+Examples:
+>-  # Folded and stripped
+|-  # Literal and stripped
+>+  # Folded and kept
+|+  # Literal and kept
+
+example_folded_stripped: >-
+  This is a folded text
+  that will be stripped
+  of trailing newlines.
+
+example_literal_stripped: |-
+  This is a literal text
+  that will preserve line breaks
+  but strip trailing newlines.
+
+example_folded_kept: >+
+  This is a folded text
+  that will keep
+  all trailing newlines.
+
+example_literal_kept: |+
+  This is a literal text
+  that will preserve line breaks
+  and keep all trailing newlines.
+
+_______________________________________________________
+Complex Keys in YAML:
+
+Complex keys allow you to use more than just simple strings as keys in YAML mappings. They can include spaces, special characters, or even nested structures.
+
+To use a complex key, enclose it in quotes or use the ? indicator.
+
+Examples:
+
+1. Using quotes:
+"complex key with spaces": value
+
+2. Using the ? indicator:
+? !!python/tuple [a, b, c]
+: value
+
+3. Multiline complex key:
+? |
+  This is a multiline
+  complex key
+: value
+
+These complex keys are particularly useful when you need to use structured data as keys or when your keys contain special characters that would otherwise be interpreted by YAML.
+
+_____________________________________________________
+
+Anchors and References in YAML:
+
+Anchors and references allow you to reuse content within a YAML document, reducing repetition and improving maintainability.
+
+1. Anchors (&): Define a reusable piece of YAML.
+2. References (*): Refer to the anchored content.
+
+Examples:
+
+# Anchoring a scalar
+first_name: &name John
+last_name: Doe
+full_name: *name Doe  # Resolves to "John Doe"
+
+# Anchoring a list
+fruits: &fruit_list
+  - apple
+  - banana
+  - orange
+
+favorite_fruits: *fruit_list  # Reuses the entire list
+
+# Anchoring a dictionary
+address: &addr
+  street: 123 Main St
+  city: Anytown
+  country: USA
+
+home_address: *addr  # Reuses the entire address dictionary (all keysand values)
+work_address:
+  <<: *addr  # Merges the anchored content
+  street: 456 Office Blvd  # Overrides a specific key
+
+Anchors and references are powerful features for creating more efficient and maintainable YAML configurations, especially in complex documents with repeated structures.
+
+______________________________________________________

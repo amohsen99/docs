@@ -31,6 +31,9 @@ sed '/^$/d ' $file > new-text
 echo "Blank lines removed"
 ---
 
+vim sed.sh
+ubuntu@DolfinED:~$ chmod +x sed.sh
+ubuntu@DolfinED:~$ ./sed.sh
 
 
 ############# Script 2 #############

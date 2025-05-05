@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Auto Shutdown every minute (for testing)
+
+[Timer]
+OnCalendar=*:*:00
+AccuracySec=1s
+Persistent=true
+
+[Install]
+WantedBy=timers.target

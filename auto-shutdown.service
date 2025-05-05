@@ -1,0 +1,15 @@
+[Unit]
+Description=Auto Shutdown Service
+After=network.target
+
+[Service]
+Type=simple
+User=mohsen
+ExecStart=/home/mohsen/kit/docs/auto_shutdown.sh
+WorkingDirectory=/home/mohsen/kit/docs
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/mohsen/.Xauthority"
+Environment="DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u mohsen)/bus"
+
+[Install]
+WantedBy=multi-user.target

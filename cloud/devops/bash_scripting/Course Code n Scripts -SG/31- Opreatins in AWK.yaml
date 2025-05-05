@@ -13,6 +13,55 @@ deepak   sales     23000
 Sara     sales     13000
 Satvik   HR        80000
 
+#search pattern for sales in file 
+ubuntu@DolfinED:~$ awk '/sales/' file1.txt
+Sara     sales     25000
+Mena     sales     50000
+Ahmed    sales     15000
+deepak   sales     23000
+Sara     sales     13000
+
+ubuntu@DolfinED:~$ awk '$2 ~ /sales/ { print $1, $2 }' file1.txt
+Sara sales
+Mena sales
+Ahmed sales
+deepak sales
+Sara sales
+
+#search pattern from start of line with A
+ubuntu@DolfinED:~$ awk ' /^A/ { print $1, $2 }' file1.txt
+Ali account
+Ahmed sales
+
+
+
+#search only on filed 1 
+ubuntu@DolfinED:~$ awk '$1 ~ /^A/ { print $1, $2 }' file1.txt
+Ali account
+
+#comparision 
+ubuntu@DolfinED:~$ awk '$3 > 20000 { print $1, $2, $3 }' file1.txt
+Nader account 45000
+Mena sales 50000
+Ali account 47000
+deepak sales 23000
+Satvik HR 80000
+
+#Arithmetic Operation
+
+ubuntu@DolfinED:~$ awk '{ print $1, $2, $3*2 }' file1.txt
+Name      DEP     90000
+Nader    account   90000
+Sara     account   50000
+Mena     sales     100000
+Ali      account   94000
+Ahmed    sales     30000
+deepak   sales     46000
+Sara     sales     26000
+Satvik   HR        160000
+
+
+
 
 
 

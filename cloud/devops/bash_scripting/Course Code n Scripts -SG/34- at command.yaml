@@ -1,5 +1,5 @@
 
-
+#at command for scheduling jobs to run in the future at a specific time for one time only
 ## Change the timezone
 
 ubuntu@DolfinED:~$ date
@@ -27,3 +27,9 @@ mkdir file-at
 
 touch file-at/test
 ---
+
+### Run Script
+ubuntu@DolfinED:~$ chmod +x at.sh
+ubuntu@DolfinED:~$ at 10am 12/10/2025 -f at.sh
+#-f mean read com
+

@@ -1,0 +1,218 @@
+\sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Your computer is scheduled to shut down in 1 minute.
+Press 'c' to cancel shutdown or any other key to shut down now.
+
+Shutting down now...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required

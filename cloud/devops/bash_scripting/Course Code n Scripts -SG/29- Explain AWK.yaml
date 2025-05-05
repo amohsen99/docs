@@ -1,4 +1,8 @@
-
+whats awk and how to use it?
+awk is a programming language used to process text files like sed
+but awk is more powerful than sed
+awk is also called as stream editor
+awk is also called as stream processor
 
 
 ubuntu@DolfinED:~$ awk ' BEGIN { print "DolfinED"  } '

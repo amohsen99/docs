@@ -26,9 +26,12 @@ echo "The arguments after another shift: $@"
 
 ubuntu@DolfinED:~$ vim shift.sh
 ---
+# $# is number of arguments
+# $* is all arguments
 #!/bin/bash
 
-while [ $# -gt 0 ]
+
+while [ $# -gt 0 ]   
 do
     echo "$*"
     shift

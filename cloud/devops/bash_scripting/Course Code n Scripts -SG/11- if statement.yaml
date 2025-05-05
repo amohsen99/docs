@@ -16,6 +16,7 @@ fi
 ubuntu@DolfinED:~$ vim sc1.sh
 ---
 #!/bin/bash
+# Note: $1 is first argument and $2 is second argument we enter them while run script 
 if [ $1 -gt $2 ]
 then
         echo "You are right"

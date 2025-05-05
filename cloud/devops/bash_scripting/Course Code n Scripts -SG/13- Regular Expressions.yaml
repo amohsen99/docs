@@ -8,7 +8,7 @@ ubuntu@DolfinED:~$ vim sc5.sh
 
 read -p "What is your age= " age
 
-if [[ $age =~ ^[0-9]+$ ]]
+if [[ $age =~ ^[0-9]+$ ]]  
 then
         echo "Your age is $age"
 else
