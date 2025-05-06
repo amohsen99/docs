@@ -1,0 +1,56 @@
+
+##################################################
+############ Demo Dockerfile Part 1 ##############
+##################################################
+
+# Lets start  first with a simple docker file
+
+# lets Create a Dockerfille using the vim editor
+$ vim Dockerfile
+
+## Docker file 1 ##
+
+FROM alpine
+CMD [ "echo", "DolfinED", "Docker Course"]
+
+$ docker build -t simple-file .
+$ docker run --name first simple-file
+
+---
+
+## Docker File 2 ##
+
+FROM ubuntu
+RUN  apt-get update
+RUN apt-get install -y vim
+RUN apt-get install -y git
+CMD ["echo", "Hello from DolfinED"]
+
+$ docker build -t wrong .
+
+# show the layers of an image, to see the layers of an image and it is not a best practice
+$ docker history wrong OR <image_id>  
+
+$ docker run wrong
+
+
+---
+
+### Docker File 3 ###
+
+### Run command recommend ####
+
+FROM ubuntu
+RUN apt-get update && apt-get install -y \
+    vim \
+    git
+CMD ["echo", "Hello From best Container"]
+
+# >> this will do the job in 2 layers 
+
+
+$ docker build -t best-iamge .
+$ docker run --name best-server -d best-iamge
+
+$ docker history best-apache  >>> view layers
+---
