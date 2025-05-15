@@ -11,6 +11,8 @@ $ docker image ls # list images
 
 $ docker container create -it ubuntu bash # it just creates but does not run it 
 
+docker ps # list running containers
+
 $ docker container start -i <container-id>  # start the container 
 
 root@bc21358485$ cat /etc/hostname # show the id of container

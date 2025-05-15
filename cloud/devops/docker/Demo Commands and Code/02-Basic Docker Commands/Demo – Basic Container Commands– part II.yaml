@@ -53,4 +53,4 @@ docker ps -a
 
 # exec... it is used to login to the container 
 $ docker run -it -d ubuntu /bin/bash
-$ docker exec <container_id> # login to a container
+$ docker exec -it <container_id> /bin/bash # login to a container
