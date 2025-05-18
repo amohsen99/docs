@@ -4,7 +4,10 @@
 $ docker run -it -d --name first centos
 
 # create a new container with custom network
-$ docker network create --subnet 10.0.0.0/16 custom network
+$ docker network create --subnet 10.0.0.0/16 custom-network
+docker network ls
+docker network inspect custom-network
+
 
 $ ip a  # and see the new network (br-8fvd7a) 
 
@@ -18,7 +21,11 @@ $ docker network connect custom network first
 $ ip a  # you will see a new network added that has references to a new network that attaches to the existing containe
 
 # disconnect the network
+#$ docker network disconnect <network-name> <container-name>
 $ docker network disconnect custom network first
+
+# if you want to verify that the network is disconnected from this container, you can run the ip command again and you will see only the default network
+# run ip a again in the container and you will see only the default network
 
 =====================================================================================================================
 

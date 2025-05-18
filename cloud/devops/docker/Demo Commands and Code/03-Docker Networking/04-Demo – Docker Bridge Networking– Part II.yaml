@@ -29,6 +29,12 @@ $ docker exec -it cont2 bash
 $ docker exec -it cont3 bash
 [root@c5736e9e521a /]# ping 172.19.0.2
 [root@c5736e9e521a /]# ping 172.19.0.3
+[root@c5736e9e521a /]# ping cont3
+
+
+#you can ping with container name and if it will search for ip address can ping on it 
+# if not found it will search for container name
+
 
 
 ################ END Senarioooooo ##########

@@ -10,7 +10,8 @@ $ docker network ls
 $ docker network create net1
 $ docker network create --subnet 10.0.0.0/16 net2
 
-
+docker network ls
+docker network inspect net1
 # create 2 container and connect with network (net1)
 $ docker run -it -d --name cont1 --network net1 centos
 $ docker run -it -d --name cont2 --network net1 centos

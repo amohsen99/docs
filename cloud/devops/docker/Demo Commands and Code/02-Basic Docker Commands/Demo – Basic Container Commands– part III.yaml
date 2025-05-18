@@ -6,6 +6,8 @@
 
 # run a conatiner with the specified name 
 docker run -it -d --name test centos # rename an container
+docker run -it -d --name ubuntu ubuntu # rename an container
+
 
 #inspect images and conatiners 
 docker inspect <container_name> or <container_id> 
@@ -22,7 +24,8 @@ $ docker run --help
 
 
 # Logs
-$ docker run -d --name date alpine watch "date >> /var/log/date.log"
+$ docker run -d --name date alpine watch "date >> /var/log/date.log" # it will print the date every second 
+#watch >> it will print the date every second
 $ docker logs date # it prints the date 
 
 
@@ -32,9 +35,22 @@ $ docker run -it -d --name change centos
 $ docker exec -it change bash
 [root@cdfsdfsd /]# vi test.text # and write any word
 [root@cdfsdfsd /]# exit
-$ docker commit change new-change
+$ docker commit change new-change # it will create a new image from the container 
 $ docker images # to view new image
 $ docker run -it -d --name new-cont new-change
 $ docker exec -it new-cont bash
 [root@cdfsdfsd /]# ls  # list all files and you will found file "test.text"
 
+
+#create new image from container
+#docker commit <container_id> <image_name>
+docker commit mohsen_ubuntu mohsen_image
+
+#run container from new image
+#docker run -it --name <container_name> <image_name>
+docker run -it --name mohsen_container mohsen_image
+root@061d8d3d1bfb:/# ls
+
+
+#to remove all of the containers
+docker rm $(docker ps -a -q)

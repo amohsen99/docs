@@ -11,6 +11,10 @@ we have 3 types of network :
 # List network
 $ docker network ls
 
+ip a # you will see the eth0 and docker0
+
+bridge  link  # you will see how newtork work 
+
 # create a new network
 $ docker network create <network-name>
 

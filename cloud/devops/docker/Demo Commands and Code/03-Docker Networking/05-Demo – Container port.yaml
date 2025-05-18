@@ -1,5 +1,15 @@
+# what is the port:
+# The port is a number that is used to identify a specific application or service on a computer or network.
+# Ports are used to differentiate between different services running on the same computer or network.
+# every port have a specific number and this number is unique
+# every app have default port and this port is unique
 
-
+# what is the port binding:
+# Port binding is the process of mapping a port on the host machine to a port on a container.
+# It allows you to access a container's services from outside the container by specifying the port number on the host machine.
+# why we need port binding:
+# to access the container from outside the container as we can install more than same container with same port 
+# so we should use port binding to access each one 
 first we will instal telebt because we will use it for this LAB
 
 
