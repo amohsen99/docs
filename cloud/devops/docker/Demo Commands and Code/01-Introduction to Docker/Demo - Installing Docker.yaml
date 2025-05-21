@@ -13,9 +13,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 
 Add the Docker repo to APT sources:
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-
-
+sudo1
 Update the  database with the Docker packages from the added repo:
 sudo apt update
 

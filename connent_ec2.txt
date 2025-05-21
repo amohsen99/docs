@@ -2,12 +2,13 @@
 chmod 400 prodesk_key.pem
 
 sudo 
-ssh -i "prodesk_key.pem" ubuntu@ec2-3-83-153-199.compute-1.amazonaws.com
-
-ssh -i "prodesk_key.pem" ubuntu@ec2-44-215-15-63.compute-1.amazonaws.com
+ ssh -i "mohsen_key_pair.pem" ec2-user@ec2-34-199-161-164.compute-1.amazonaws.com
 
 amoshenmohamed571@gmail.com
 Maka20/10
+
+abdelmohsen.mohamed369@gmail.com
+abdelmohsen@369
 
 
 elastic ip address  for 

@@ -42,6 +42,8 @@ $ docker push menamagdyhalem/docker-course
 
 $ docker push menamagdyhalem/docker-course:v1
 
+docker pull menamagdyhalem/docker-course:v1
+
 $ docker logout
 
 

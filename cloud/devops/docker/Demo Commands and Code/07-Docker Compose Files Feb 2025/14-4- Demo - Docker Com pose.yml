@@ -3,7 +3,7 @@ $ docker compose version
 
 ubuntu@ip-172-31-5-234:~$ vim docker-compose.yml
 ---
-services:
+services:  # refer to different containers which will be created
   db:
     image: nginx
     container_name: dolfined

@@ -6,7 +6,7 @@
 ### (Copy, Volume, ENV, WORKDIR)
 
 
-
+## COPY <source> <destination>  
 $ vim test.text #and write anything
 
 FROM ubuntu
@@ -20,6 +20,9 @@ $ cat test.text
 
 ## WORKDIR
 
+## WORKDIR <path>
+# after create work dir all the next command will be executed from this directory
+# so at the end the path will be root@ruwep423/docker/container
 
 FROM ubuntu
 WORKDIR /docker
@@ -42,4 +45,5 @@ CMD ${env1} ${env2}
 $ docekr build -t env .
 $ docker run --name env-ping -d env 
 
+# docker logs <container_name>
 $ docker logs env-ping

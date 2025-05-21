@@ -15,7 +15,7 @@ CMD [ "echo", "DolfinED", "Docker Course"]
 
 $ docker build -t simple-file .
 $ docker run --name first simple-file
-
+vi
 ---
 
 ## Docker File 2 ##
@@ -44,7 +44,7 @@ FROM ubuntu
 RUN apt-get update && apt-get install -y \
     vim \
     git
-CMD ["echo", "Hello From best Container"]
+CMD ["/bin/echo", "Hello From best Container"]
 
 # >> this will do the job in 2 layers 
 
@@ -54,3 +54,20 @@ $ docker run --name best-server -d best-iamge
 
 $ docker history best-apache  >>> view layers
 ---
+
+#final steps 
+#1- write the docker file 
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y \
+    vim \
+    git
+
+CMD ["/bin/echo", "Hello From best Container"]
+
+
+#2- build the image 
+$ docker build -t best-iamge .
+
+#3- run the container 
+$ docker run --name best-server -d best-iamge

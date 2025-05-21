@@ -30,6 +30,7 @@ $ vim index.html
 </html>
 
 ##### run a container
+# docker run -it -d --name html -p 8080:80 --name web -v <host_directory>:<container_directory> nginx
 $ docker run -it -d --name html -p 8080:80 --name web -v ~/website:/usr/share/nginx/html nginx
 
 # >>>>> Access from browser localhot:8080
